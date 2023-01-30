@@ -1,0 +1,183 @@
+
+.App {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('/clima.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: rgba(59, 59, 59, 0.8);
+    color: white;
+    padding: 2.5em 1.5em;
+    border-radius: 0.7em;
+    max-width: 400px;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.card__search{
+    margin: 10px;
+}
+
+.card__title {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.card__subtitle{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.search__box {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+}
+
+.search__box-input {
+    width: 100%;
+    background-color: rgb(196, 194, 194);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0px 5px rgb(0,0,0,0.2);
+    color: #504f4f;
+    font-size: 16px;
+    padding: 5px;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+.search__box-input:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+.search__box-button{
+    height: 2rem;
+    width: 5rem;
+    font-size: 1.2rem;
+    background-color: #1d1d1d;
+    color: white;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.search__box-button:hover{
+    background-color: rgb(59, 59, 59);
+    font-size: 1.5rem;
+}
+
+.card__body {
+    display: grid;
+    grid-template-columns: 170px 1fr;
+    align-items: center;
+    justify-content: center;
+}
+
+.card__info-title {
+    text-align: center;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.card__info-body {
+    display: grid;
+    gap: 0.5em;
+}
+
+.card__info-item {
+    font-size: 0.9rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-weight: 600;
+}
+
+.card__info-label {
+    font-weight: 300;
+}
+
+.card__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__temperature {
+    margin-bottom: 0.7em;
+}
+
+.card__btn {
+    font-size: 0.9rem;
+    padding: 0.7em 1.5rem;
+    border-radius: 0.3em;
+    box-shadow: 0.2em 0.2em 0.7em rgb(24, 24, 24);
+}
+
+.card__btn:hover {
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+.notfound {
+    display: grid;
+    gap: 1rem;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.notfound__img {
+    width: 350px;
+    padding: 1rem;
+}
+
+
+.loader {
+    width: 175px;
+    height: 80px;
+    display: block;
+    margin: auto;
+    background-image: radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), radial-gradient(circle 50px at 50px 50px, #FFF 100%, transparent 0), radial-gradient(circle 25px at 25px 25px, #FFF 100%, transparent 0), linear-gradient(#FFF 50px, transparent 0);
+    background-size: 50px 50px, 100px 76px, 50px 50px, 120px 40px;
+    background-position: 0px 30px, 37px 0px, 122px 30px, 25px 40px;
+    background-repeat: no-repeat;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .loader::after {
+    content: '';  
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 20px;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-color: #FF3D00 transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 
+
+
+
+
+
+
