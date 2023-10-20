@@ -1,19 +1,36 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .App {
     width: 100%;
+    height: 100%;
     min-height: 100vh;
-    background-image: url('/clima.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.video-container {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.video-container video {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
 .card {
-    background-color: rgba(59, 59, 59, 0.8);
-    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(226, 226, 226);
     padding: 2.5em 1.5em;
     border-radius: 0.7em;
     max-width: 400px;
@@ -21,6 +38,12 @@
     display: grid;
     justify-content: center;
     align-items: center;
+    box-shadow: 10px 10px 20px #0c0c0c;
+    transform: scale(1.1);
+}
+
+.card:hover {
+    transform: scale(1.2);
 }
 
 .card__search{
